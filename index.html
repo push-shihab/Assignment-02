@@ -25,7 +25,7 @@
     <!-- Header -->
     <header class="bg-[#1A0B2E]">
       <!-- Nav Bar -->
-      <nav class="flex justify-between items-center max-w-7xl mx-auto py-6">
+      <nav class="flex justify-around items-center max-w-[1600px] mx-auto py-6">
         <div>
           <h1 class="text-3xl text-white cursor-pointer hover:text-[#FB09B4]">
             Tech<span class="text-[#9100F8] font-bold">Wave</span>
@@ -55,30 +55,42 @@
         </div>
         <div>
           <button
-            class="inter font-semibold text-white px-4 py-3 rounded-4xl cursor-pointer bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] hover:from-[#FB09B4] hover:via-[#9100F8] hover:to-[#F7E93F]"
+            class="font-semibold text-white px-4 py-3 rounded-4xl cursor-pointer bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] hover:from-[#FB09B4] hover:via-[#9100F8] hover:to-[#F7E93F]"
           >
             Subscribe<i class="fa-solid fa-arrow-right ml-1"></i>
           </button>
         </div>
       </nav>
       <!-- Intro section -->
-      <main class="max-w-7xl mx-auto text-white flex flex-col items-center">
-        <div class="intro-section h-[491px] w-full border-4">
+      <main
+        class="intro-section max-w-[1600px] mx-auto h-[760px] text-white flex flex-col items-center"
+      >
+        <div>
           <span
-            class="inter font-semibold text-[18px] text-black px-4 py-2 rounded-4xl uppercase bg-[#00FF88]"
+            class="new inter font-semibold text-[18px] text-black px-4 py-2 rounded-4xl uppercase bg-[#00FF88]"
             >New</span
           >
         </div>
-        <div>
-          <h1>TechWave</h1>
-          <p>
-            Your daily dose of tech insights, productivity hacks, and personal
-            growth
-          </p>
-        </div>
-        <div>
-          <button><img src="assets/spotify.png" />Listen on Spotify</button>
-          <button><img src="assets/message.png" />Subscribe</button>
+        <div class="text-center pt-[491px]">
+          <div>
+            <h1 class="font-extrabold text-6xl mb-2">TechWave</h1>
+            <p>
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+          </div>
+          <div class="mt-6 flex justify-center gap-2">
+            <button
+              class="flex gap-2 items-center font-semibold text-white px-4 py-3 rounded-4xl cursor-pointer bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] hover:from-[#FB09B4] hover:via-[#9100F8] hover:to-[#F7E93F]"
+            >
+              <img class="h-5" src="assets/spotify.png" />Listen on Spotify
+            </button>
+            <button
+              class="second-btn flex gap-2 items-center font-semibold text-[#00FF88] px-4 py-3 rounded-4xl cursor-pointer border-2 border-[#00FF88]"
+            >
+              <img src="assets/message.png" />Subscribe
+            </button>
+          </div>
         </div>
       </main>
     </header>
