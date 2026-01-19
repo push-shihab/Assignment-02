@@ -4,6 +4,9 @@
 .inter {
   font-family: "Inter", sans-serif;
 }
+.secondery-color {
+  color: rgba(255, 255, 255, 0.8);
+}
 
 /* CSS for Header */
 /* Navbar */
@@ -40,12 +43,15 @@
 }
 
 /* CSS for about section */
-.about-info {
-  color: rgba(255, 255, 255, 0.8);
-}
 
 .podcast-border {
   /* border: none; */
   height: 6px;
   color: rgba(255, 255, 255, 0.1);
+}
+
+/* CSS for Reasoning Section */
+
+.reasoning-box {
+  background-color: rgba(53, 17, 101, 0.4);
 }
