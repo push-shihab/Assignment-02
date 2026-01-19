@@ -72,3 +72,9 @@
   border-radius: 50%;
   padding: 10px;
 }
+
+/* CSS for Footer section */
+.footer{
+  background-image: url('../assets/footer-bg.png');
+  background-repeat: no-repeat;
+}
