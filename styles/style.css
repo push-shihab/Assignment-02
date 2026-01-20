@@ -18,10 +18,14 @@
   width: 30%;
   height: 4px;
   background-color: #fb09b4;
-  transition: width ease-in-out 0.2s;
+  transition: width ease-in-out 0.3s;
 }
 .nav-links a:hover hr {
   width: 100%;
+}
+
+.hamburger{
+  display: none;
 }
 /* CSS for Intro Section */
 
@@ -77,4 +81,118 @@
 .footer{
   background-image: url('../assets/footer-bg.png');
   background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* CSS for different screen size */
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
+  .nav-links{
+    display: none;
+  }
+  .nav-btn{
+    display: none;
+  }
+  .hamburger{
+    display: flex;
+  }
+  .reviews{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .about-para{
+    padding: 0 100px;
+    text-align: center;
+  }
+  .reasons{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .reason{
+    grid-column: auto;
+  }
+  .iframe-box{
+    flex-wrap: wrap;
+  }
+  .footer{
+    padding: 50px 0;
+  }
+  .footer div{
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .footer h1{
+    font-size: 3rem;
+  }
+  .footer p{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-links{
+    display: none;
+  }
+  .nav-btn{
+    display: none;
+  }
+  .hamburger{
+    display: flex;
+  }
+  .hero{
+    padding-top: 28rem;
+  }
+  .hero h1{
+    font-size: 4rem;
+    margin-bottom: 2px;
+  }
+  .hero p{
+    font-size: 1.5rem;
+  }
+  .hero-btn{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 48px;
+  }
+  .about-para{
+    padding: 0 60px;
+    text-align: center;
+  }
+  .reviews{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  .reasons{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+  .reason{
+    grid-column: auto;
+  }
+  .iframe-box{
+    flex-wrap: wrap;
+  }
+  .feature-host{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .host-icon{
+    justify-content: center;
+  }
+    .footer{
+    padding: 20px 0;
+  }
+  .footer div{
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    margin: 16px 0;
+  }
+  .footer h1{
+    font-size: 2rem;
+  }
+  .footer p{
+    text-align: center;
+  }
 }

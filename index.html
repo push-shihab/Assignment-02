@@ -25,7 +25,7 @@
     <!-- Header -->
     <header class="bg-[#1A0B2E]">
       <!-- Nav Bar -->
-      <nav class="flex justify-between items-center max-w-[1600px] mx-auto py-6">
+      <nav class="flex justify-around items-center max-w-[1600px] mx-auto py-6">
         <div>
           <h1 class="text-3xl text-white cursor-pointer hover:text-[#FB09B4]">
             Tech<span class="text-[#9100F8] font-bold">Wave</span>
@@ -34,19 +34,19 @@
         <div class="nav-links">
           <ul class="flex gap-8 text-white">
             <li>
-              <a href=""
+              <a href="#"
                 >About
                 <hr
               /></a>
             </li>
             <li>
-              <a href=""
+              <a href="#"
                 >Episodes
                 <hr
               /></a>
             </li>
             <li>
-              <a href=""
+              <a href="#"
                 >Host
                 <hr
               /></a>
@@ -55,15 +55,18 @@
         </div>
         <div>
           <button
-            class="font-semibold text-white px-4 py-3 rounded-4xl cursor-pointer bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] hover:from-[#FB09B4] hover:via-[#9100F8] hover:to-[#F7E93F]"
+            class="transition duration-300 hover:scale-110 hover:text-[#00ff26] font-semibold text-white px-4 py-3 rounded-4xl cursor-pointer bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] hover:from-[#FB09B4] hover:via-[#9100F8] hover:to-[#F7E93F] nav-btn"
           >
             Subscribe<i class="fa-solid fa-arrow-right ml-1"></i>
           </button>
         </div>
+        <div class="hamburger">
+          <img src="assets/hamburger-menu.png">
+        </div>
       </nav>
       <!-- Intro section -->
       <main
-         class="intro-section max-w-[1600px] mx-auto h-[760px] text-white flex flex-col items-center"
+          class="intro-section max-w-[1600px] mx-auto h-[760px] text-white flex flex-col items-center"
       >
         <div>
           <span
@@ -71,22 +74,22 @@
             >New</span
           >
         </div>
-        <div class="text-center pt-[491px]">
-          <div>
+        <div class="text-center">
+          <div class="hero pt-[491px]">
             <h1 class="font-extrabold text-6xl mb-2">TechWave</h1>
             <p>
               Your daily dose of tech insights, productivity hacks, and personal
               growth
             </p>
           </div>
-          <div class="mt-6 flex justify-center gap-2">
+          <div class="hero-btn mt-6 grid grid-cols-2 justify-center gap-2">
             <button
-              class="flex gap-2 items-center font-semibold text-white px-4 py-3 rounded-4xl cursor-pointer bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] hover:from-[#FB09B4] hover:via-[#9100F8] hover:to-[#F7E93F]"
+              class="transition duration-300 hover:scale-110 hover:text-[#00ff26] flex gap-2 justify-center items-center font-semibold text-white px-4 py-3 rounded-4xl cursor-pointer bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] hover:from-[#FB09B4] hover:via-[#9100F8] hover:to-[#F7E93F]"
             >
               <img class="h-5" src="assets/spotify.png" />Listen on Spotify
             </button>
             <button
-              class="second-btn flex gap-2 items-center font-semibold text-[#00FF88] px-4 py-3 rounded-4xl cursor-pointer border-2 border-[#00FF88]"
+              class="second-btn flex gap-2 justify-center items-center font-semibold text-[#00FF88] px-4 py-3 rounded-4xl cursor-pointer border-2 border-[#00FF88]"
             >
               <img src="assets/message.png" />Subscribe
             </button>
@@ -97,7 +100,7 @@
       <section class="about max-w-[1600px] mx-auto">
         <div class="text-white text-center pt-[50px] pb-20">
           <h1 class="font-bold text-5xl mb-4">About the Podcast</h1>
-          <p class="secondery-color">
+          <p class="secondery-color about-para">
             TechWave is your go-to podcast for staying ahead in the fast-paced
             world of technology.<br />
             We break down complex topics into digestible insights, explore
@@ -109,7 +112,7 @@
         </div>
         <hr class="podcast-border" />
           <div
-            class="grid grid-cols-4 text-white pt-20 pb-[120px] gap-20 uppercase"
+            class="reviews grid grid-cols-4 text-white pt-20 pb-[120px] gap-20 uppercase"
           >
             <div class="text-center">
               <h2 class="text-[#00FF88] text-5xl font-black mb-4">150K+</h2>
@@ -133,12 +136,12 @@
     </header>
     <!-- Reasoning Section -->
     <section class="bg-[#230E3D]">
-      <div class="max-w-[1600px] mx-auto text-white py-[120px] bg-[#230E3D]">
+      <div class="max-w-[1600px] mx-auto text-white py-[120px] px-6 bg-[#230E3D]">
         <h2 class="text-center text-5xl font-bold mb-10">
           Why Choose TechWave
         </h2>
-        <div class="grid grid-cols-3 gap-8">
-          <div class="row-span-2 px-10 py-[108px] reasoning-box rounded-[40px]">
+        <div class="reasons grid grid-cols-3 gap-8">
+          <div class="reason row-span-2 px-10 py-[108px] reasoning-box rounded-[40px]">
             <img src="assets/headphone.png" />
             <h3 class="text-2xl font-bold my-4">Premium Audio Quality</h3>
             <p class="secondery-color">
@@ -147,7 +150,7 @@
               for optimal listening across all devices and platforms.
             </p>
           </div>
-          <div class="col-span-2 p-10 reasoning-box rounded-[40px]">
+          <div class="reason col-span-2 p-10 reasoning-box rounded-[40px]">
             <img src="assets/device.png" />
             <h3 class="text-2xl font-bold my-4">Mobile Friendly</h3>
             <p class="secondery-color">
@@ -155,14 +158,14 @@
               downloads.
             </p>
           </div>
-          <div class="col-span-2 p-10 reasoning-box rounded-[40px]">
+          <div class="reason col-span-2 p-10 reasoning-box rounded-[40px]">
             <img src="assets/location.png" />
             <h3 class="text-2xl font-bold my-4">Global Community</h3>
             <p class="secondery-color">
               Connect with tech enthusiasts from over 120 countries worldwide.
             </p>
           </div>
-          <div class="col-span-2 p-10 reasoning-box rounded-[40px]">
+          <div class="reason col-span-2 p-10 reasoning-box rounded-[40px]">
             <svg
               width="60"
               height="60"
@@ -210,11 +213,11 @@
       </div>
     </section>
     <!-- Featured Episodes -->
-    <section class="bg-[#1A0B2E]">
-      <div class="max-w-[1600px] mx-auto py-[120px]">
-        <div class="text-white">
+    <section class="bg-[#1A0B2E] py-[120px]"
+      <div class="max-w-[1600px] mx-auto">
+        <div class="text-white px-8">
           <h2 class="text-center font-bold text-5xl mb-10">Featured Episodes</h2>
-          <div class="flex gap-8">
+          <div class="iframe-box flex gap-8">
           <div>
           <iframe width="100%" height="270px" src="https://www.youtube.com/embed/NQp3cbSkqbo?si=KIDbXvmuSr_QvnXQ" title="YouTube video player" frameborder="0" class="rounded-t-3xl"></iframe>
           <div class="p-6 bg-[#250D44] rounded-b-3xl">
@@ -241,7 +244,7 @@
           </div>
           </div>
         </div>
-        <div class="mt-[120px]">
+        <div class="mt-[120px] px-6">
           <h2 class="font-bold text-5xl text-white text-center mb-10">Meet the Host</h2>
           <div class="flex text-white feature-host rounded-[48px] p-10 gap-6 items-center">
             <img src="assets/host.png">
@@ -249,10 +252,10 @@
               <h3 class="text-[32px] font-bold">Alex Kumar</h3>
               <p class="my-4 third-color">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
               <div class="flex gap-2 host-icon">
-                <a><img src="assets/linkedin.png"></a>
-                <a><img src="assets/instagram.png"></a>
-                <a><img src="assets/x.png"></a>
-                <a><img src="assets/youtube.png"></a>
+                <a href="#" class="cursor-pointer"><img src="assets/linkedin.png"></a>
+                <a href="#" class="cursor-pointer"><img src="assets/instagram.png"></a>
+                <a href="#" class="cursor-pointer"><img src="assets/x.png"></a>
+                <a href="#" class="cursor-pointer"><img src="assets/youtube.png"></a>
               </div>
             </div>
           </div>
@@ -265,11 +268,11 @@
         <h1 class="text-8xl text-white cursor-pointer hover:text-[#FB09B4]">
             Tech<span class="text-[#9100F8] font-bold">Wave</span>
           </h1>
-          <div class="my-8 secondery-color flex gap-10">
-            <a class="flex gap-2.5"><img class="p-0.5" src="assets/spotify.png"><span>Spotify</span></a>
-            <a class="flex gap-2.5"><img class="p-0.5" src="assets/apple-podcast.png"><span>Apple Podcast</span></a>
-            <a class="flex gap-2.5"><img class="p-0.5" src="assets/youtube.png"><span>Youtube</span></a>
-            <a class="flex gap-2.5"><img class="p-0.5" src="assets/twitter.png"><span>Twitter</span></a>
+          <div class="my-8 secondery-color grid grid-cols-4 gap-10">
+            <a class="flex gap-2.5 cursor-pointer hover:text-[#00ff26]" href="#"><img class="p-0.5" src="assets/spotify.png"><span>Spotify</span></a>
+            <a class="flex gap-2.5 cursor-pointer hover:text-[#00ff26]" href="#"><img class="p-0.5" src="assets/apple-podcast.png"><span>Apple Podcast</span></a>
+            <a class="flex gap-2.5 cursor-pointer hover:text-[#00ff26]" href="#"><img class="p-0.5" src="assets/youtube-podcast.png"><span>Youtube</span></a>
+            <a class="flex gap-2.5 cursor-pointer hover:text-[#00ff26]" href="#"><img class="p-0.5" src="assets/twitter.png"><span>Twitter</span></a>
           </div>
           <p class="third-color">&copy; 2026 TechWave Podcast. All rights reserved.</p>
       </div>
